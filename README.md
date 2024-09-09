@@ -5,8 +5,8 @@ Objectives:
 
 	Prepare the dataset for modeling by applying preprocessing techniques.
 	Address the issue of class imbalance using SMOTE.
-	Train multiple machine learning models and evaluate their performance.
-	Use evaluation metrics like Precision, Recall, F1-Score, and ROC-AUC to select the best model.
+	Train machine learning model and evaluate their performance.
+	Use evaluation metrics like Precision, Recall, F1-Score, and ROC-AUC .
 
 # Dataset Information
 
