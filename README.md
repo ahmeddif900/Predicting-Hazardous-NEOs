@@ -61,7 +61,7 @@ Random Forest Performance:
 
 # Findings and Insights
 
- Feature Importance: The relative_velocity, miss_distance, and absolute_magnitude were the most influential features for predicting hazardous NEOs.
+ Feature Importance: The relative_velocity, miss_distance, and absolute_magnitude were the most influential features for predicting hazardous NEOs. 
  Class Imbalance: The original dataset had a significant imbalance between hazardous and non-hazardous NEOs. The application of SMOTE improved model performance on the minority class.
  Random Forest Model: Provided the best balance between precision and recall, making it ideal for this use case where false negatives (i.e., missing hazardous NEOs) are critical.
 
