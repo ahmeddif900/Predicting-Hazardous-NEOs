@@ -3,23 +3,23 @@
 This project utilizes a machine learning pipeline to predict the "is_hazardous" label of NEOs based on their features, such as absolute magnitude, diameter, relative velocity, and miss distance. Accurate identification of hazardous NEOs is vital for planetary defense and can aid NASA in future observational efforts.
 Objectives:
 
-Prepare the dataset for modeling by applying preprocessing techniques.
-Address the issue of class imbalance using SMOTE.
-Train multiple machine learning models and evaluate their performance.
-Use evaluation metrics like Precision, Recall, F1-Score, and ROC-AUC to select the best model.
+	Prepare the dataset for modeling by applying preprocessing techniques.
+	Address the issue of class imbalance using SMOTE.
+	Train multiple machine learning models and evaluate their performance.
+	Use evaluation metrics like Precision, Recall, F1-Score, and ROC-AUC to select the best model.
 
 # Dataset Information
 
 The dataset used for this project includes 338,199 observations of NEOs from NASA. Here are the key columns:
 
-neo_id: Unique identifier for the NEO.
-name: Name of the NEO.
-absolute_magnitude: Brightness of the NEO.
-estimated_diameter_min/max: Minimum and maximum estimated diameter of the NEO.
-orbiting_body: The celestial body the NEO is orbiting (e.g., Earth).
-relative_velocity: The velocity of the NEO relative to Earth.
-miss_distance: How close the NEO came to Earth.
-is_hazardous: Target variable indicating if the NEO is classified as hazardous (True/False).
+	neo_id: Unique identifier for the NEO.
+	name: Name of the NEO.
+	absolute_magnitude: Brightness of the NEO.
+	estimated_diameter_min/max: Minimum and maximum estimated diameter of the NEO.
+	orbiting_body: The celestial body the NEO is orbiting (e.g., Earth).
+	relative_velocity: The velocity of the NEO relative to Earth.
+	miss_distance: How close the NEO came to Earth.
+	is_hazardous: Target variable indicating if the NEO is classified as hazardous (True/False).
 
 # Data Preprocessing
 Key Preprocessing Steps:
@@ -39,11 +39,10 @@ Random Forest Classifier (chosen as the final model due to its performance)
 Hyperparameters:
 
 Random Forest:
-        n_estimators: 100
 
-        class_weight: 'balanced'
-
-        random_state: 42
+      n_estimators: 100
+      class_weight: 'balanced'
+      random_state: 4
 
 # Evaluation Metrics
 
@@ -56,10 +55,10 @@ ROC-AUC: Area Under the Receiver Operating Characteristic curve.
 
 Random Forest Performance:
 
-Precision: 0.92
-Recall: 0.85
-F1-Score: 0.88
-ROC-AUC: 0.94
+	Precision: 0.67
+	Recall: 0.64
+	F1-Score: 0.65
+	ROC-AUC: 0.95
 
 # Findings and Insights
 
@@ -70,8 +69,8 @@ Random Forest Model: Provided the best balance between precision and recall, mak
  # Installation & Usage
 Requirements:
 
-   Python 3.x ,
-   Libraries:
+    Python 3.x ,
+    Libraries:
         pandas,
         ,numpy
         ,scikit-learn
